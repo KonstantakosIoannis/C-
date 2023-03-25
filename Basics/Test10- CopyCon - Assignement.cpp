@@ -23,7 +23,7 @@ class person
 		person (const person &);
 		
 		person & operator=(const person &);
-		//ginetai kai me void alla tote tha eixa thema otan ekana p1=p2=p3;  etc...
+		//void is also a possible solutino but then : p1=p2=p3;  ERROR...
 };
 
 person & person::operator=(const person & src)
