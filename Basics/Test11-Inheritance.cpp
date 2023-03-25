@@ -93,9 +93,9 @@ int main ()
 	
 	dog d1; // default animal - default dog
 	dog d2("woof");// default animal & semi-default dog
-	d2.print();  // kane chech me tin print mono tou animal
-				// check me tin proti print tou dog
-				// check me tin kanoniki print pou xrisimopoiei to ::animal
+	d2.print();  // check only with animal print
+				// check with the first print dog
+				// check with print ::animal
 				
 	dog d3(10,"lucy","woof woof");
 	d3.print();
