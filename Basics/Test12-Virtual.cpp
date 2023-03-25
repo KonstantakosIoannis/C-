@@ -96,7 +96,7 @@ int main ()
 	doggo->print();
 	
 	animal * beta = doggo;
-	beta->print(); // kaleitai i print tou animal
+	beta->print(); // animal print
 	
 	// px me pinakes 
 	animal * pin[2];
@@ -111,7 +111,7 @@ int main ()
 	delete alpha;
 	delete doggo;
 	
-	// polimorfismos me anafores 
+	
 	animal delta("Rex",10);
 	dog sigma(10,"lucy","woof woof");
 	
