@@ -96,9 +96,7 @@ int main()
 	staff[2]=new boss("lele",2);
 	
 	staff[2]->addWorker(staff[0]);
-	//PROSOXI edw gia na treksei auti i sanartisi ekana kai mia idia alla virtual
-	// sto progono. Den kanei kati apla iparxei gia na mporei na deiksei ekei o pointer 
-	// kai na paei meta sto apo katw epipedo klironomikotitas
+	
 	
 	for (int i=0; i<3; i++)delete staff[i];
 	
