@@ -34,8 +34,6 @@ class cyclist
 	
 };
 
-//SOS thelei kai sta tria public. GIATI?? ti ginetai an to grapsw etsi:
-//class triathlete:public runner,  cyclist,  swimmer
 class triathlete:public runner, public cyclist, public swimmer
 {
 	private :
