@@ -77,7 +77,7 @@ class dog : public animal
 };
 
 
-void display(animal & alpha) // check kai xoris to & 
+void display(animal & alpha) 
 {
 	alpha.print();
 }
@@ -98,7 +98,7 @@ int main ()
 	animal * beta = doggo;
 	beta->print(); // animal print
 	
-	// px me pinakes 
+	// arrays example
 	animal * pin[2];
 	pin[0]=alpha;
 	pin[1]=beta;
