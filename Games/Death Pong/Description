@@ -1,0 +1,3 @@
+MyGame.h and MyGame.cpp is where the hard code is located. The gameplay !!
+By studying these two files you can understand a lot about the mechanics of the game and 
+learn how the sgg library works. 
