@@ -62,20 +62,20 @@ class home :public building
 			cout << "New home" << endl;
 		}
 
-		home(const home & orig)// original source proto src
+		home(const home & orig)
 		{
 			cout << "Copy con " << endl;
 
 			this->number = orig.number;
 			this->familyNumber = orig.familyNumber;
-			this->position = 0;// sizitisimo
+			this->position = 0;
 			this->family = new string[orig.familyNumber];
 			for (int i = 0; i < orig.familyNumber; i++)
 			{
 				this->family[i] = orig.family[i];
 				this->position = this->position + 1;
 			}
-			//memcpy(this->family, orig.family, orig.familyNumber * sizeof(string));//sizitisimo
+			//memcpy(this->family, orig.family, orig.familyNumber * sizeof(string));
 		}
 
 
@@ -135,36 +135,28 @@ class home :public building
 
 int main()
 {
-	// H klasi home klironomei Dimosia thn klasi building
-
-	//To ti pedia tha baleis se kathe klasi , to katalabaineis apo ta sxolia dipla
-	//apo tin dimiourgia kathe antikeimenou sti main
-
-	//kathe home krataei enan  pinaka me ta onomata autwn pou menoun se auto
-
-	//h home klironomei tin methodo print apo to building
-	//kai ektipwnei ola ta onomata pou exei mesa o pinakas pou anaferame pio panw
+	
 
 
 
 	//building b1;
-	//building b2("Patisiwn", 100, 150);//dromos - timh spitiou - Tetragonika metra
+	//building b2("Patisiwn", 100, 150);//road - price -  m^2
 
-	// poia i diafora autou me to panw?
+	
 	//building();
 	//building("liosiwn", 100, 150);
 
-	//home ();  omoiws , poia i diafora me ta parakatw?
+	//home (); 
 
 	home h0;
-	home h1("Sepoliwn", 350, 90, 12, 3);//dromos - timh spitiou - Tetragonika metra - arithmos oikias - posa atoma katoikoun se auto(px edw mia 4melis oikogenia)
+	home h1("Sepoliwn", 350, 90, 12, 3);//road  - price - m^2 - number  - number of residents)
 
-	h1 << "John";  // gemisma tou pinaka pou krataei h home
+	h1 << "John";  
 	h1 << "Tim";
 	h1 << "Loulou";
 
 
-	cout << h1; // ektiposi tou protou keliou tou pinaka
+	cout << h1; 
 	h1.print();
 
 
@@ -180,11 +172,7 @@ int main()
 	cout << h3;
 	h3.print();
 
-	// na grapseis tin idia main , me dinamiki desmeysi mnimis kai na eksighsete 
-	// ta ofelh ths praksis sas.
-
-	//dwste ena paradeigma xrisis tou orou virtual 
-
+	
 
 	return 0;
 }
