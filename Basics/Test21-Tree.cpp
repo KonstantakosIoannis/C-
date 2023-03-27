@@ -28,7 +28,7 @@ class ball
 			this->price=price;
 		}
 		
-		//anadromikh
+		
 		/*
 		void print()
 		{
@@ -40,7 +40,7 @@ class ball
 		
 		
 		
-		//stack- STOIBA - LIFO
+		//stack - LIFO
 		/*
 		void print()
 		{
@@ -50,14 +50,13 @@ class ball
 			
 			while(!remaining.empty())
 			{
-				ball * current = remaining.top();// bazw sti metabliti remainig to top tis stoibas
-				remaining.pop(); //  to bgazw apo ti stoiba
+				ball * current = remaining.top();
+				remaining.pop(); 
 				
 				cout<<current->price<<endl;
-				if(current->right)remaining.push(current->right); // an exei deksi paidi to bazw sti stoiba
-				if(current->left)remaining.push(current->left); // omoiws gia aristero pedi
+				if(current->right)remaining.push(current->right); 
+				if(current->left)remaining.push(current->left); 
 				
-				// kai twra tsekarw to teleutaio stoixeio pou exw kanei push			
 			}
 		}
 		*/
@@ -100,7 +99,7 @@ int main()
 	
 	//b1.print();
 	
-	//Ηomework - Na ginei templated\
+	//Ηomework - template
 	
 	
 	return 0;
