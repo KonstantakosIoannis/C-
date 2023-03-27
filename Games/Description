@@ -2,3 +2,6 @@ Games designed using the sgg (SIMPLE GAME GRAPHICS) library
 
 You can download free the library here : 
 https://github.com/cgaueb/sgg
+
+Every game must have an assets folder where the multimedia are located
+Images music and Fonts. Feel free to instert your own graphics/audio and make a whole new game
