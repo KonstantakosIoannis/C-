@@ -260,10 +260,10 @@ int main()
 {
 	cout<<"Test 1 : "<<endl<<endl;
 	
-	vec <int> y(5); //dimiourgia custom "vector" me 5 kelia-theseis
+	vec <int> y(5); // custom "vector" with 5 cells
 	
 	
-	y.push_back(20); //push back san tou vector
+	y.push_back(20); //push back 
 	y.push_back(30);
 	y.push_back(40);
 	y.push_back(50);
@@ -273,15 +273,14 @@ int main()
 	
 	
 	
-	y.pushFront(10); // push front antistoixa
+	y.pushFront(10); // push front 
 	
-	y.popBack(); // diagrafi tou teleutaiou keliou
+	y.popBack(); // delete last
 	
-	y.popFront();//diagrafi tou protou keliou (array[0])
+	y.popFront();//delete first (array[0])
 	
-	y.push_at(90,4); // eisagwgi tou 90 sti thesi 4
-	
-	y.pop_at(2); // diagrafei tou keliou 2
+	y.push_at(90,4); // insert 90 at position N.4	
+	y.pop_at(2); // delete cell N.20
 	
 	vec <int> y2(2);
 	y2.push_back(200);
@@ -293,36 +292,35 @@ int main()
 	y3=y;  // operator =
 	
 	
-	y.taks(); // taksinomisi auksousa i fthinousa oti thes
+	y.taks(); // sort Desc
 	
-	y.flip(); // anapodogirisma tou vector
+	y.flip(); 
 	
-	y.print(); // cout olwn twn keliwn tou vector
-	
+	y.print(); 
 //////////////////////////////  TEST  2  //////////////////////////
 
 	cout<<endl<<"Test 2 :"<<endl<<endl;
 	
-	if(y.empty())cout<<"I am empty "<<endl;  // na ektipwnei an o vector einai adeios i oxi
+	if(y.empty())cout<<"I am empty "<<endl;  
 	else
 	{
-		cout<<"My size is : "<<y.mySize()<<" bytes"<<endl;  //size tou vector se bytes
+		cout<<"My size is : "<<y.mySize()<<" bytes"<<endl;  //vector size(bytes)
 	
-		cout<<"I have "<<y.howLong()<<" elements"<<endl;  //arithmos keliwn tou vector
+		cout<<"I have "<<y.howLong()<<" elements"<<endl;  //number of elements
 		
 		cout<<"My first element is : "<<y.begin() //array[0]
 		<<" and my last one is : "<<y.end()<<endl; // array[last]
 	}
 	
 	cout<<"Do you have a '30' in your elements ?          ";
-	if(y.find(30))cout<<"Yes i Do!!"<<endl;  // epistrefei an iparxei i timh 30 ston vector
+	if(y.find(30))cout<<"Yes i Do!!"<<endl;  
 	else cout<<"Sorry but NO"<<endl;
 	
-	cout<<"My third element is : "<<y[2]<<endl;  // epistrefei to array[i]
+	cout<<"My third element is : "<<y[2]<<endl;  
 	
-	y.erase();                      // na adeiasei o pinakas
+	y.erase();                      
 	if(y.empty())cout<<"I am empty "<<endl;
-	y.off();                       // na apenergopoihthei o pinakas
+	y.off();                       //delete 
 	if(y.empty())cout<<"I am empty "<<endl;  
 	
 //////////////////////////////  TEST  3  //////////////////////////
