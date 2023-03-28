@@ -12,15 +12,15 @@ class person
 		person(int age){this->age=age;}
 		
 		
-		//operator bool()const// telestis metatropis tipou. epistrefei bool metabliti
-		//bool operator()// kai oxi etsi
+		//operator bool()const
+		//bool operator()//DIFFERENT
 		//{
 		//	return this->age==0;
 		//}
 		
 		
 		
-		operator int()const// telestis metatropis tipou. epistrefei bool metabliti
+		operator int()const
 		{
 			return this->age;
 		}
