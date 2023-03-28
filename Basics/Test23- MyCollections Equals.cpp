@@ -54,24 +54,24 @@ int main()
 	banana b4(40,100,"Chiquita");	
 	
 	set<banana> mikroKalathi;
-	//mikroKalathi.insert(b1);   //ERROR    ??giati??
+	//mikroKalathi.insert(b1);   //ERROR    
 	
-	set<banana,howBig> kalathi;  //equal - compar - sigrisi
+	set<banana,howBig> kalathi;  //compare
 	
 	kalathi.insert(b1);
 	kalathi.insert(b2);
 	kalathi.insert(b3);
-	kalathi.insert(b3);//monadika stoixeia
+	kalathi.insert(b3);//unique
 	kalathi.insert(b4);
 	
-	for (set<banana,howBig>::iterator i=kalathi.begin(); i!=kalathi.end(); ++i)//protimame auto oso ginetai
+	for (set<banana,howBig>::iterator i=kalathi.begin(); i!=kalathi.end(); ++i)
 	//for(auto i=kalathi.begin(); i!=kalathi.end(); ++i) auto=set<banana,howBig>::iterator
 	{
-		//1os tropos NEW ONE
+		//1
 		banana temp=*i;
 		cout<<temp.getName()<<endl;
-		
-		//2os tropos
+	
+		//2
 		cout<<i->getName()<<endl;
 	}
 	
