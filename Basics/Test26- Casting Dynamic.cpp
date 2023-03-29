@@ -6,7 +6,7 @@ using namespace std;
 class animal
 {
 	public :
-    	virtual void print(){cout << "animal" << endl;} // bgale to virtual void kai kane tsek
+    	virtual void print(){cout << "animal" << endl;} //check without tve virtual
 };
   
 class dog : public animal 
@@ -31,21 +31,13 @@ int main()
     cat c1;
     
     animal * aPTR = dynamic_cast<animal*>(&d1);
-    // edw metatrepw ton pointer tou d1 se pointer tipou animal
-    // pragma to opoio einai eukolo kai ginetai panta. trexei akoma ki an den exw virtual thn print tou animal
-    //ayto den einai dynamic casting
+
   	
   	
   	
   	cat * cPTR = dynamic_cast<cat*>(&d1);
-  	
-	// edw prospathw na metatrepsw se cat ena dog DEN GINETAI - omoiws de ginetai kai to cat se dog
-  	// tsekare ti ginetai an i void print tou animal den einai virtual
-  	//TIP oti exw sta aristera(cat*) tha exw kai sta <>
-  
-  	//thimizoume oti an den petixei to casting tha epistrafei enas nullptr
-  	// pleon i c++ sou bgazei kai warning oti den petixe to cast
-    
+  	//c++ gives us a warning when casting didn't complete
+	
 	if(cPTR==nullptr) cout<<"null"<<endl;
     else cout<<"not null"<<endl;
    	
