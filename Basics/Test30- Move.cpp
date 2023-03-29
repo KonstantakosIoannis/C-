@@ -29,13 +29,11 @@ class myfile
 			cout<<"Move "<<endl;
 			this->pin=src.pin;
 			this->pinSize=src.pinSize;
-			// ws edw kanei oti kanei kai o default copy constructor
+			
 			
 			src.pinSize=0;
 			src.pin=NULL;
-			//edw OMWS katastefw to src
-			// gia dio logous. proton gia na min exw dipli desmeusi mnimis aneu logou
-			// deyteron gia na treksei sosta o destructor xoris na mou sbisei to this->pin
+			
 		}
 		
 		myfile & operator=(myfile && src)
@@ -91,9 +89,9 @@ myfile go()
 }
 int main()
 {
-	myfile(5);//prosorina
+	myfile(5);
 	
-	myfile g=go();// edw den tha prepe na xw klish move constructor?
+	myfile g=go();
 	
 	myfile f(5); 
 	f.pinFill();
