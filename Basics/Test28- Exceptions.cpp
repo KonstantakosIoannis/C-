@@ -9,17 +9,17 @@ int main () {
 	cout<<"give me a number : ";
 	cin>>x;
 	
-	try {         //  αυτο το κανουμε για να αποφυγουμε μια μαλακια του χρηστη συνηθως. πχ να βαλει διαρετη 0
-	 if (x !=0){	// αν δεν βαλει κανουμε κανονικα οτι ειναι να κανουμε.
+	try {         
+	 if (x !=0){	
 	 	cout<<float(2/x)<<endl;     
 	 }
-	 else throw (x);    //αν βαλει κανουμε throw την exception
+	 else throw (x);    
 	}
 	
 	
 	catch (float x)
-	{    // Και μετα ΠΑΝΤΑ την κανουμε catch. 
-		cout<<x<<" is not valid"<<endl;   // δηλαδη τι κανουμε σε περιπτωση που μας παρουσιαστει αυτη η εξαιρεση
+	{    /
+		cout<<x<<" is not valid"<<endl;   
 	}
 	
 	
