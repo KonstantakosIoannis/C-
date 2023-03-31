@@ -15,12 +15,12 @@ int main()
 {
 	//thread myThread = thread(go,100,50);
 	//myThread.join();
-	// tsekare ti ginetai an den kanw join
 	
 	
 	
 	
-	// kai me pinakas : 
+	
+	
 	int num =8;
 	thread * pin = new thread[num];
 	for(int i=0; i<num; i++) 
