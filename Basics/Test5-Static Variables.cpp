@@ -33,7 +33,7 @@ int main()
 	lemon a5;
 	
 	a3.print();
-	// a4.print();  DEN exei simasia apo poio antikeimeno kaloume tin print(to how many einai koino gia ola)
+	// a4.print();  //check
 	
 	return 0;
 }
