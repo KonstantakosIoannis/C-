@@ -6,51 +6,50 @@ using namespace std;
 
 int main () {
 	
-	string leksi = "gia sou ";
+	string leksi = "hello";
 	
-	ofstream writer("stevequote.txt");   // δημιουργουμε το steve quate txt το οποιο μπαινει στη μεταβλητη  writer
+	ofstream writer("stevequote.txt");   
 	
-	if(!writer) {    // τσεκαρουμε αν υπαρχει το αρχειο
+	if(!writer) {    
 		cout<<"error opening file"<<endl;    
 		return -1;
 	}
 	else {
-		writer<<leksi<<endl;   // προσθετουμε στο αρχειο τη string leksi
-		writer.close();        // και το κλεινουμε
+		writer<<leksi<<endl;   //adding one more word
+		writer.close();       
 		
 	}
 	
-	ofstream writer2 ("stevequote.txt" , ios::app);  //  ανοιγουμε εναν νεο ofstream ωστε να γραψουμε στο τελς του stevequate 
-													// αυτο το πετυχαινουμε με το ios::append!
+	ofstream writer2 ("stevequote.txt" , ios::app);  
 						
-	//  ξανακανουμε τον ιδιο ελεγχο : 
+	
 	
 	if (!writer2){
 		cout<<"error";
 		return -1;
 	}
 	else {
-		writer2<<"\n - John"<<endl;  // αλλαοζουμε γραμμη με το \n και προσθετουμε και προσθετουμε κι αλλλα γραμματα (john)
-		writer2.close();             // κλεινουμε το writer
+		writer2<<"\n - John"<<endl;  // change line and add one more word('john')
+		writer2.close();             
 	}
 					
 	char letter ;
 	
-	ifstream reader("stevequote.txt"); // φτιαχνουμε ενα ifstream το οποιο ονομαζουμε reader  ωστε να διαβασουμε το αρχείο
+	ifstream reader("stevequote.txt"); 
 	
-	// παλι ελεγχος οπως πριν: 
+	
 	
 	if (!reader){
 		cout<<"error"<<endl;
 		return -1;
 	}
-	else {   // και ετσι εκτυπωνουμε ενα txt
-		for (int i=0;   !reader.eof(); i++) // !reader end of file οσο δηλαδή δεν είμαστε στο τελος του αρχείου
-		reader.get(letter);  // παιρνουμε απο το reader ενα char και το βαζουμε στο letter
+	else {   //print
+		for (int i=0;   !reader.eof(); i++) //end of file
+		reader.get(letter);  
 		cout<<letter;
 	}
 	cout<<endl;
-	reader.close();   // για καποιο λογο ο παραπανω τροπος δεν εκτυπωνει τιποτα οποτε κανουμε το επομενο : 
+	reader.close(); 
 	
 	
 	ifstream file("stevequote.txt");
