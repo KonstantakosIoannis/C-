@@ -26,15 +26,13 @@ class book
 	    {
 	    	os<<"Hello my price is "<<right.price<<endl;  // h alliws
 	    	cout<<"Hello my price is "<<right.price<<endl;
-		} // edw den paizw me this giati pleon den eimai mesa stin klasi
-		// mporei na grafetai entos klasis i sanartisi kai na blepei ta pedia tin epeidi einai friend
-		// omos den apotelei melos tis
+		} 
 		*/
 		
 		friend ostream & operator <<(ostream & os ,  book & right)
 		{
 			os<<"Hello my price is "<<right.price<<endl;
-			return os;  // den exei simasia ama tha balw os i cout 
+			return os; 
 		}
 };
 
@@ -71,7 +69,7 @@ int main()
 	book b4("GoT",5);
 	
 	//cout<<b4;
-	cout<<b4<<endl;  // me tin prwti ilopoihsh den trexei giati exw void
+	cout<<b4<<endl; 
 	
 	b1.print();
 	book b5=10+b1;
