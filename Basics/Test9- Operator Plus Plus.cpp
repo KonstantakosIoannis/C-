@@ -21,15 +21,15 @@ class book
 	
 };
 
-const book book::operator++(int)//metathematikos x++
+const book book::operator++(int)
 {
-	book temp(this->name , this->price);//dimiourgia prosorinou antikeimenou
+	book temp(this->name , this->price);
 	this->price=this->price+9;
 	return temp;
 }
 
-//einai pio grigoros giati den exw dimiourgia prosorinou antikeimenou
-book & book::operator++()//prothematikos ++x
+
+book & book::operator++()
 {
 	this->price=this->price+5;
 	return *this;
