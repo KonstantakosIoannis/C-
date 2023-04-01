@@ -1,8 +1,5 @@
 #include <iostream>
 
-// operator +(book+book) kai epistrefei book
-// operator +(book+int)  kai epistrefei book
-
 
 using namespace std;
 
@@ -29,10 +26,7 @@ book book::operator+(const int & right)const
 	book temp("Y book ", this->price+right);
 	return temp;
 	
-	// an de thelame na dimiourgisoume kainourgio biblio apla na auksisw tin timi 
-	// tou eautou mou (b0=b0+5;) pws tha ginotan kalitera i parapanw ilopoihsh?
-	// askisi
-	
+
 }
 
 book book::operator+(const book & right)const
@@ -85,16 +79,12 @@ int main()
 	b8=b8+2; //anatimisi
 	b8.print();
 	
-	// b9=9+b1; AUTO de ginetai akoma 
-	// GIATI??
-	// to be implemented when friendly . . . 
+	// b9=9+b1; check this error and try to fix it
 	
-	// askisi 2 : na epistrefei int kai oxi book
-	
-	//askisi 3 :
-	//book b9 = b1+b2+b3+b4+9;  // ginete?
-	//book b10 = b5+b9+5+b4;    // ginete? giati? afou to 9+b1 de ginetai parapanw
-	//book b11 = 5+b1+b2+b4;    // ginete? giati oxi?
+	//check the following 3 lines
+	//book b9 = b1+b2+b3+b4+9;  
+	//book b10 = b5+b9+5+b4;    
+	//book b11 = 5+b1+b2+b4;    
 	
 	return 0;
 }
